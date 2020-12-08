@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         }
+§
         rejectCallButton.setOnClickListener {
             incomingCall = false
             call = null
@@ -74,6 +75,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         }
+
         endCallButton.setOnClickListener {
             call?.hangup(object : NexmoRequestListener<NexmoCall> {
                 override fun onError(p0: NexmoApiError) {
